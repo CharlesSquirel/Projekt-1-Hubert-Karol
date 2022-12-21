@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel website</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/aacfed8f05.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="top-box">
+      <!-- HEADER -->
+      <header class="main-header">
+        <h3 class="main-header__logo-text">Gloritel</h3>
+        <nav class="nav-top">
+          <ul class="nav-top__nav-links">
+            <li class="nav-top__nav-link">
+              <a href="#"
+                >Find Hotels <span class="nav-top__arrow-icon"><i class="fa-solid fa-chevron-down arrow-icon-light"></i></span
+              ></a>
+            </li>
+            <li class="nav-top__nav-link"><a href="#">Location</a></li>
+            <li class="nav-top__nav-link"><a href="#">About</a></li>
+            <li class="nav-top__nav-link"><a href="#">Contact</a></li>
+            <li class="nav-top__nav-link"><a href="#" id="login">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- SECTION -->
+      <section class="title-box">
+        <div class="title-text">
+          <h1 class="title-text__main-text">Find Most Luxurious Hotels Across The Globe</h1>
+          <div class="watch-box">
+            <span class="watch-box__play-icon">
+              <i class="fa-solid fa-play play-icon"></i>
+            </span>
+            <p class="watch-box__watch-text">Watch Demo Video</p>
+          </div>
+        </div>
+        <span class="title-box__arrow">
+          <i class="fa-solid fa-chevron-down arrow-icon-dark"></i>
+        </span>
+        <!-- FROM -->
+        <div class="form">
+          <!-- INPUT TEXT -->
+          <label for="country">Where you go?</label>
+          <input id="country" class="form__country-input" type="text" placeholder='try "Pakistan"' />
+          <span class="form__location-icon"><i class="fa-solid fa-location-dot location-icon-dark"></i></span>
+          <!-- CHECKBOXES -->
+          <div class="form__check-container">
+            <div class="form__check-in-box">
+              <label for="check-in">Check in</label>
+              <input class="form__check-in-input" id="check-in" type="text" placeholder="10 May" onfocus="(this.type='date')" onblur="(this.type='text')" />
+            </div>
+            <div class="form__check-out-box">
+              <label for="check-out">Check out</label>
+              <input class="form__check-out-input" id="check-out" type="text" placeholder="10 May" onfocus="(this.type='date')" onblur="(this.type='text')" />
+            </div>
+          </div>
+          <!-- SELECT -->
+          <label for="select">Guest</label>
+          <select class="form__select-input" name="select" id="select" placeholder="How many guests?">
+            <option value="" class="form__select-option" disabled selected hidden>How many guests?</option>
+            <option value="one" class="form__select-option">1</option>
+            <option value="two" class="form__select-option">2</option>
+            <option value="three" class="form__select-option">3</option>
+            <option value="four" class="form__select-option">4</option>
+            <option value="five" class="form__select-option">5+</option>
+          </select>
+          <span class="form__arrow-icon"><i class="fa-solid fa-chevron-down arrow-icon-dark"></i></span>
+          <!-- CHECKBOX -->
+          <div class="form__checkbox-box">
+            <input class="form__checkbox" id="checkbox" type="checkbox" />
+            <label id="checkbox-label" for="checkbox">Pay when checking in?</label>
+          </div>
+          <!-- BUTTON -->
+          <button class="form__button">Search Hotels</button>
+        </div>
+      </section>
+      <footer class="title-box-footer">
+        <span class="title-box-footer__location-icon"><i class="fa-solid fa-location-dot location-icon-light"></i></span>
+        <p class="title-box-footer__text">Mercurser Hotel, Austria</p>
+      </footer>
+    </section>
+    <!-- //////////////////////////// -->
+    <!-- ///////////////////////////// -->
+    <main>
+      <!-- RECOMMENDED -->
+      <section class="recommended">
+        <!-- HEADING -->
+        <div class="recommended__heading-container">
+          <h2 class="recommended__heading-title">Recommended Hotels</h2>
+          <p class="recommended__heading-description">Book hotels as based upon experienced the best booking ever. Highly recommended</p>
+        </div>
+        <!-- HOTELS EXAMPLES -->
+        <div class="hotels-examples-container">
+          <!-- MAIN HOTEL -->
+          <figure class="hotel-card-main">
+            <img class="main-hotel-img" src="/image/delight.jpg" alt="Delight hotel in Singapure" />
+            <figcaption class="delight-figcaption">
+              <div class="figcaption-box-first">
+                <h2 class="hotel-delight-name">Delight Hotel</h2>
+                <div class="delight-notes-box">
+                  <span class="delight-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="delight-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="delight-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="delight-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="delight-card-star"><i class="fa-solid fa-star"></i></span>
+                  <p class="hotel-delight-notes-number">(200)</p>
+                </div>
+              </div>
+              <div class="figcaption-box-second">
+                <h3 class="delight-hotel-city">Singapore</h3>
+                <a class="delight-hotel-link" href="#">Learn More</a>
+              </div>
+            </figcaption>
+          </figure>
+          <!-- SECONDARY HOTEL -->
+          <figure class="hotel-card-secondary">
+            <img class="secondary-hotel-img" src="/image/royal.jpg" alt="Royal hotel in Singapure" />
+            <figcaption class="royal-figcaption">
+              <div class="figcaption-box-first">
+                <h2 class="hotel-royal-name">Royal Hotel</h2>
+                <div class="royal-notes-box">
+                  <span class="royal-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="royal-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="royal-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="royal-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="royal-card-star"><i class="fa-solid fa-star"></i></span>
+                  <p class="hotel-royal-notes-number">(300)</p>
+                </div>
+              </div>
+              <div class="figcaption-box-second">
+                <h3 class="royal-hotel-city">Singapore</h3>
+                <a class="royal-hotel-link" href="#">Learn More</a>
+              </div>
+            </figcaption>
+          </figure>
+          <!-- THIRD HOTEL -->
+          <figure class="hotel-card-third">
+            <img class="third-hotel-img" src="/image/air.jpg" alt="Air hotel" />
+            <figcaption class="air-figcaption">
+              <div class="figcaption-box-first">
+                <h2 class="hotel-air-name">Air Blue Hotel</h2>
+                <div class="air-notes-box">
+                  <span class="air-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="air-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="air-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="air-card-star"><i class="fa-solid fa-star"></i></span>
+                  <span class="air-card-star"><i class="fa-solid fa-star"></i></span>
+                  <p class="hotel-air-notes-number">(100)</p>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- CIRCLE CAROUSEL ICONS -->
+        <div class="recommended__carousel-icons">
+          <span class="recommended__carousel-icon"><i class="fa-solid fa-circle circle-icon"></i></span>
+          <span class="recommended__carousel-icon"><i class="fa-solid fa-circle circle-icon"></i></span>
+          <span class="recommended__carousel-icon"><i class="fa-solid fa-circle circle-icon"></i></span>
+          <span class="recommended__carousel-icon"><i class="fa-solid fa-circle circle-icon"></i></span>
+          <span class="recommended__carousel-icon"><i class="fa-solid fa-circle circle-icon"></i></span>
+        </div>
+      </section>
+      <!-- //////////////////////////////// -->
+      <!-- ////////////////////////////////////////// -->
+      <!-- BENEFITS -->
+      <section class="benefits">
+        <!-- BENEFITS IMAGE -->
+        <div class="benefits__image-container">
+          <img class="benefits__image" id="pacific" src="/image/pacific.jpg" alt="Pacific hotel in Austria" />
+          <div class="benefits__paragraph">
+            <span class="benefits__location-icon"><i class="fa-solid fa-location-dot location-icon-light"></i></span>
+            <p class="benefits__image-text">Pacific Hotel, Australia</p>
+          </div>
+        </div>
+        <!-- BENEFITS EXAMPLES -->
+        <article class="benefits-description-box">
+          <h2 class="benefits-description__title">Benefits of using our services</h2>
+          <!-- BENEFIT FIRST -->
+          <div class="benefits-example">
+            <p class="benefits-example__number">01</p>
+            <div class="benefits-example__description-box">
+              <h2 class="benefits-example__title">Best Breakfast</h2>
+              <p class="benefits-example__description">Amet minim mollit non deserunt ahjas ullamco est sit aliqua dolor amet sint. Velit officia consequat</p>
+            </div>
+          </div>
+          <!-- BENEFIT SECOND -->
+          <div class="benefits-example">
+            <p class="benefits-example__number">02</p>
+            <div class="benefits-example__description-box">
+              <h2 class="benefits-example__title">Parking Area</h2>
+              <p class="benefits-example__description">Amet minim mollit non deserunt ahjas ullamco est sit aliqua dolor amet sint. Velit officia consequat</p>
+            </div>
+          </div>
+          <!-- BENEFIT THIRD -->
+          <div class="benefits-example">
+            <p class="benefits-example__number">03</p>
+            <div class="benefits-examples__description-box">
+              <h2 class="benefits-examples__title">Free Electricity</h2>
+              <p class="benefits-examples__description">Amet minim mollit non deserunt ahjas ullamco est sit aliqua dolor amet sint. Velit officia consequat</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- FEEDBACK -->
+      <section class="feedback">
+        <!-- HEADER -->
+        <header class="feedback__header">
+          <div class="feedback__title-box">
+            <h2 class="feedback_title">Our Customer Feedback</h2>
+            <p class="feedback__description">Don’t take our word for it. Trust our customers</p>
+          </div>
+          <div class="feedback__carousel-box">
+            <!-- Strzałki tutaj postanowiłem dac jako aftery i befory -->
+            <p class="feedback__previous-btn feedback__previous-btn--disabled" role="button">Previous</p>
+            <p class="feedback__next-btn feedback__next-btn--active" role="button">Next</p>
+          </div>
+        </header>
+        <!-- OPINIONS -->
+        <section class="feedback__opinion-box">
+          <!-- FIRST OPINION -->
+          <div class="feedback__card">
+            <div class="feedback__avatar-box">
+              <img class="feedback__avatar" src="/image/Awatar1.jpg" alt="Customer's avatar" />
+            </div>
+            <h3 class="feedback__customer-name">Floyd Miles</h3>
+            <p class="feedback__customer-opinion">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+          </div>
+          <!-- SECOND OPINION -->
+          <div class="feedback__card">
+            <div class="feedback__avatar-box">
+              <img class="feedback__avatar" src="/image/Awatar2.jpg" alt="Customer's avatar" />
+            </div>
+            <h3 class="feedback__customer-name">Ronald Richards</h3>
+            <p class="feedback__customer-opinion">ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+          <!-- THIRD OPINION -->
+          <div class="feedback__card">
+            <div class="feedback__avatar-box">
+              <img class="feedback__avatar" src="/image/Awatar3.jpg" alt="Customer's avatar" />
+            </div>
+            <h3 class="feedback__customer-name">Savannah Nguyen</h3>
+            <p class="feedback__customer-opinion">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim
+              mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
+        </section>
+        <div class="feedback__carousel-icons">
+          <span class="feedback__carousel-icon"><i class="fa-solid fa-circle circle-icon"></i></span>
+          <span class="feedback__carousel-icon"><i class="fa-solid fa-circle circle-icon"></i></span>
+          <span class="feedback__carousel-icon"><i class="fa-solid fa-circle circle-icon"></i></span>
+        </div>
+      </section>
+    </main>
+    <!-- SUBSCRIBE -->
+    <section class="subscribe">
+      <h2 class="subscribe__title">Subscribe to Our Newsletter</h2>
+      <p class="subscribe__subtitle">Don’t miss this opportunity. Subscribe now</p>
+      <form class="subscribe__form">
+        <label for="email" aria-hidden="true">Enter your email</label>
+        <input class="subscribe__email-input" id="email" type="email" />
+        <button class="subscribe__submit-btn">SUBSCRIBE</button>
+      </form>
+    </section>
+    <!-- INFO -->
+    <footer class="info">
+      <div class="info__columns">
+        <h3 class="info__column-title">Gloritel</h3>
+        <p class="info__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+      </div>
+      <div class="info__columns">
+        <h3 class="info__column-title">Quick links</h3>
+        <ul class="info__links">
+          <li class="info__link"><a href="#">Home</a></li>
+          <li class="info__link"><a href="#">Find Hotels</a></li>
+          <li class="info__link"><a href="#">Location</a></li>
+          <li class="info__link"><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="info__columns">
+        <h3 class="info__column-title">Information</h3>
+      </div>
+      <ul class="info__links">
+        <li class="info__link"><a href="#">Privacy Policy</a></li>
+        <li class="info__link"><a href="#">Terms of Service</a></li>
+        <li class="info__link"><a href="#">Contact</a></li>
+      </ul>
+      <div class="info__columns">
+        <h3 class="info__column-title">Social</h3>
+        <div class="info__social-icons">
+          <a href="#" class="info__social-link"><i class="fa-brands fa-facebook facebook-icon"></i></a>
+          <a href="#" class="info__social-link"><i class="fa-brands fa-instagram instagram-icon"></i></a>
+          <a href="#" class="info__social-link"><i class="fa-brands fa-twitter twitter-icon"></i></a>
+          <a href="#" class="info__social-link"><i class="fa-brands fa-linkedin linkedin-icon"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- COPYRIGHT -->
+    <div class="copyright">
+      <h4 class="copyright__text">Copyright &copy; 2022 | Designed by Hina HM</h4>
+    </div>
+  </body>
+</html>
