@@ -28,11 +28,6 @@ select {
   cursor: pointer;
 }
 
-body {
-  font-family: "Manrope", sans-serif;
-  font-weight: 400;
-}
-
 .top-box {
   background: url("../images/bg.jpg") no-repeat;
   background-size: cover;
@@ -410,4 +405,10 @@ body {
 
 .hotel-card-third {
   margin-left: 20px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  width: 100vw;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,256 @@
+// TOP SECTION
+.top-box {
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+  }
+  // NAV HEADER
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 100px;
+  
+    &__logo-text {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+  // NAV
+  .nav-top {
+    &__nav-links {
+      display: flex;
+      gap: 25px;
+      font-size: 24px;
+      line-height: 33px;
+    }
+  
+    &__nav-link a {
+      color: $white;
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+  
+    .arrow-icon-light {
+      transform: scale(0.7);
+    }
+    // LOGIN
+    #login {
+      background: $orange;
+      color: $black;
+      border-radius: 3.5px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 5px 30px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  // MAIN H1 BOX
+  .title-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    padding-top: 137px;
+    position: relative;
+    align-items: center;
+  
+    .title-text {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      max-width: 620px;
+      padding-top: 20px;
+  
+      &__main-text {
+        font-weight: 600;
+        font-size: 66px;
+        line-height: 80px;
+      }
+      // WATCH ICON
+      .watch-box {
+        display: flex;
+        position: relative;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          opacity: 0.85;
+        }
+  
+        &__play-icon {
+          width: 58px;
+          height: 53px;
+          background-color: $white;
+          border-radius: 50%;
+        }
+  
+        .play-icon {
+          color: $orange;
+          font-size: 1.5rem;
+          position: absolute;
+          left: 22px;
+          top: 14px;
+        }
+  
+        &__watch-text {
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 14px;
+          color: $black;
+          background: $white;
+          width: 130px;
+          height: 35px;
+          border-radius: 0px 20px 20px 0px;
+          padding: 10px 20px;
+          position: absolute;
+          left: 44px;
+        }
+      }
+    }
+    // ARROW MIDDLE
+    &__arrow {
+      color: $black;
+      transform: scale(5);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $white;
+      }
+    }
+    // TOP FORM
+    .form {
+      background: rgba(217, 217, 217, 0.1);
+      box-shadow: inset 39.1333px -39.1333px 39.1333px rgba(165, 165, 165, 0.1), inset -39.1333px 39.1333px 39.1333px rgba(255, 255, 255, 0.1);
+      -webkit-backdrop-filter: blur(39.1333px);
+      backdrop-filter: blur(39.1333px);
+      border-radius: 10px;
+      width: 537px;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 28px;
+      font-family: "Inter", sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 25px;
+      gap: 10px;
+      position: relative;
+      // INPUT PLACEHOLDER
+      input::-webkit-input-placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #818181;
+      }
+  
+      input::-moz-placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #818181;
+      }
+  
+      input:-ms-input-placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #818181;
+      }
+  
+      input::-ms-input-placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #818181;
+      }
+  
+      input::placeholder {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        padding-left: 32px;
+      }
+      // COUNTRY INPUT
+      &__country-input {
+        width: 486px;
+        height: 70px;
+        border-radius: 10px;
+      }
+  
+      &__location-icon {
+        position: absolute;
+        right: 63px;
+        top: 97px;
+        color: #030303;
+      }
+      // CHECK IN-OUT
+      &__check-container {
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      &__check-in-box,
+      &__check-out-box {
+        gap: 7px;
+        display: flex;
+        flex-direction: column;
+      }
+  
+      &__check-in-input,
+      &__check-out-input {
+        width: 221px;
+        height: 70px;
+        border-radius: 10px;
+      }
+      // SELECT
+      &__select-input {
+        @extend .form__country-input;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+  
+      &__arrow-icon {
+        color: $black;
+        position: absolute;
+        right: 55px;
+        top: 330px;
+      }
+  
+      #checkbox-label {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      // FORM BUTTON
+      &__button {
+        @extend .form__country-input;
+        background: $orange;
+        font-size: 26px;
+        line-height: 32px;
+        font-family: "Inter", sans-serif;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+  // FOOTER TEXT
+  .title-box-footer {
+    padding: 100px;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.85;
+    }
+  }
