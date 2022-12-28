@@ -34,7 +34,7 @@ body {
 }
 
 .top-box {
-  background: url(bg.jpg) no-repeat;
+  background: url(/image/bg.jpg) no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
