@@ -85,6 +85,7 @@ body {
   padding: 0 100px;
   padding-top: 137px;
   position: relative;
+  align-items: center;
 }
 .title-box .title-text {
   display: flex;
@@ -135,9 +136,6 @@ body {
   left: 44px;
 }
 .title-box__arrow {
-  position: absolute;
-  left: 50%;
-  top: 62%;
   color: #000;
   transform: scale(5);
   font-weight: 600;

@@ -64,6 +64,7 @@ body {
   padding: 0 100px;
   padding-top: 137px;
   position: relative;
+  align-items: center;
 
   .title-text {
     display: flex;
@@ -120,9 +121,6 @@ body {
   }
   // ARROW MIDDLE
   &__arrow {
-    position: absolute;
-    left: 50%;
-    top: 62%;
     color: $black;
     transform: scale(5);
     font-weight: 600;
