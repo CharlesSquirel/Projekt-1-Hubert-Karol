@@ -42,12 +42,19 @@ select {
   display: flex;
   justify-content: space-between;
   padding: 25px 100px;
+  opacity: 1;
+  align-items: center;
 }
 .main-header__logo-text {
   font-size: 25px;
   line-height: 35px;
 }
 
+@media screen and (max-width: 1023px) {
+  .nav-top {
+    display: none;
+  }
+}
 .nav-top__nav-links {
   display: flex;
   gap: 25px;
@@ -72,6 +79,17 @@ select {
   line-height: 20px;
   padding: 5px 30px;
   transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+  display: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1023px) {
+  .hamburger {
+    display: block;
+  }
 }
 
 .title-box {
@@ -237,6 +255,39 @@ select {
 }
 .title-box-footer:hover {
   opacity: 0.85;
+}
+
+.nav-top-mobile {
+  position: absolute;
+  left: -4000px;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.nav-top-mobile__nav-links {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  font-size: 30px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+}
+.nav-top-mobile__nav-link {
+  color: #000;
+}
+.nav-top-mobile #login-mobile {
+  background: #fdc463;
+  border-radius: 3.5px;
+  padding: 1px 20px;
+}
+.nav-top-mobile #close {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  color: #000;
+  font-size: 26px;
 }
 
 .recommended {

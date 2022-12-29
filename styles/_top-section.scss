@@ -13,6 +13,8 @@
     display: flex;
     justify-content: space-between;
     padding: 25px 100px;
+    opacity: 1;
+    align-items: center;
   
     &__logo-text {
       font-size: 25px;
@@ -21,6 +23,10 @@
   }
   // NAV
   .nav-top {
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+
     &__nav-links {
       display: flex;
       gap: 25px;
@@ -48,6 +54,15 @@
       line-height: 20px;
       padding: 5px 30px;
       transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    @media screen and (max-width: 1023px) {
+      display: block;
     }
   }
   // MAIN H1 BOX
