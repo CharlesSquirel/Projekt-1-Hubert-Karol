@@ -235,6 +235,7 @@ select {
   position: absolute;
   right: 55px;
   top: 330px;
+  pointer-events: none;
 }
 .title-box .form__checkbox-box {
   display: flex;
