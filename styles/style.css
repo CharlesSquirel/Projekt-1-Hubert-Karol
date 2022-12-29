@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -230,10 +231,34 @@ select {
   right: 55px;
   top: 330px;
 }
+.title-box .form__checkbox-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
 .title-box .form #checkbox-label {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+}
+.title-box .form #checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  position: relative;
+}
+.title-box .form #checkbox:checked::after {
+  display: block;
+  content: "✓";
+  color: #fdc463;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  left: 4px;
+  bottom: 1px;
 }
 .title-box .form__button {
   background: #fdc463;
