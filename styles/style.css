@@ -224,6 +224,11 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #818181;
+  padding-left: 30px;
 }
 .title-box .form__arrow-icon {
   color: #000;
