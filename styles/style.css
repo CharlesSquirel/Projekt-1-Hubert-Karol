@@ -30,28 +30,32 @@ select {
 }
 
 .top-box {
+  display: flex;
+  flex-direction: column;
   background: url("../images/bg.jpg") no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
   color: #fff;
 }
 
 .main-header {
   display: flex;
   justify-content: space-between;
-  padding: 25px 100px;
-  opacity: 1;
   align-items: center;
+  padding: 25px 100px;
+}
+@media (max-width: 450px) {
+  .main-header {
+    padding: 25px;
+  }
 }
 .main-header__logo-text {
   font-size: 25px;
   line-height: 35px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 900px) {
   .nav-top {
     display: none;
   }
@@ -71,7 +75,8 @@ select {
 .nav-top .arrow-icon-light {
   transform: scale(0.7);
 }
-.nav-top #login {
+
+#login {
   background: #fdc463;
   color: #000;
   border-radius: 3.5px;
@@ -87,7 +92,7 @@ select {
   font-size: 40px;
   cursor: pointer;
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 900px) {
   .hamburger {
     display: block;
   }
@@ -96,47 +101,73 @@ select {
 .title-box {
   display: flex;
   justify-content: space-between;
-  padding: 0 100px;
-  padding-top: 137px;
-  position: relative;
   align-items: center;
+  position: relative;
+  padding: 0 100px;
+  min-height: 785px;
 }
-.title-box .title-text {
+@media (max-width: 449px) {
+  .title-box {
+    width: 100vw;
+    padding: 0 25px;
+  }
+}
+@media (max-width: 1270px) {
+  .title-box {
+    flex-direction: column;
+  }
+}
+.title-box__text {
   display: flex;
   flex-direction: column;
   gap: 7px;
-  max-width: 620px;
-  padding-top: 20px;
+  max-width: 548px;
 }
-.title-box .title-text__main-text {
+@media (min-width: 450px) and (max-width: 1350px) {
+  .title-box__text {
+    max-width: 435px;
+  }
+}
+@media (max-width: 449px) {
+  .title-box__text {
+    width: 100%;
+  }
+}
+.title-box__text__main-text {
   font-weight: 600;
   font-size: 66px;
   line-height: 80px;
 }
-.title-box .title-text .watch-box {
+@media (max-width: 450px) {
+  .title-box__text__main-text {
+    font-size: 37px;
+    line-height: 47px;
+  }
+}
+.title-box__text .watch-box {
   display: flex;
   position: relative;
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.title-box .title-text .watch-box:hover {
+.title-box__text .watch-box:hover {
   opacity: 0.85;
 }
-.title-box .title-text .watch-box__play-icon {
+.title-box__text .watch-box__play-icon {
   width: 58px;
   height: 53px;
   background-color: #fff;
   border-radius: 50%;
 }
-.title-box .title-text .watch-box .play-icon {
+.title-box__text .watch-box .play-icon {
   color: #fdc463;
   font-size: 1.5rem;
   position: absolute;
   left: 22px;
   top: 14px;
 }
-.title-box .title-text .watch-box__watch-text {
+.title-box__text .watch-box__watch-text {
   font-weight: 500;
   font-size: 10px;
   line-height: 14px;
@@ -151,8 +182,7 @@ select {
 }
 .title-box__arrow {
   color: #000;
-  transform: scale(5);
-  font-weight: 600;
+  font-size: 80px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -177,6 +207,12 @@ select {
   gap: 10px;
   position: relative;
 }
+.title-box .form input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #818181;
+}
 .title-box .form input::-moz-placeholder {
   font-weight: 400;
   font-size: 20px;
@@ -184,6 +220,12 @@ select {
   color: #818181;
 }
 .title-box .form input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #818181;
+}
+.title-box .form input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -248,9 +290,7 @@ select {
   line-height: 22px;
 }
 .title-box .form #checkbox {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 18px;
   height: 18px;
   background-color: #fff;
@@ -274,12 +314,15 @@ select {
   transition: all 0.3s ease-in-out;
 }
 .title-box .form__button:hover {
+  -webkit-filter: brightness(1.1);
   filter: brightness(1.1);
   opacity: 0.9;
 }
 
 .title-box-footer {
-  padding: 100px;
+  padding-left: 100px;
+  min-height: 150px;
+  align-items: center;
   display: flex;
   gap: 5px;
   cursor: pointer;
