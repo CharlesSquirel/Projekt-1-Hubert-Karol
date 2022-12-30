@@ -600,4 +600,5 @@ input::placeholder {
 body {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */
