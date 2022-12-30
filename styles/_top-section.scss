@@ -153,170 +153,175 @@
       }
     }
   }
-  // ARROW MIDDLE
-  &__arrow {
-    color: $black;
-    font-size: 80px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      color: $white;
-    }
-  }
-  // TOP FORM
-  .form {
-    background: rgba(217, 217, 217, 0.1);
-    box-shadow: inset 39.1333px -39.1333px 39.1333px rgba(165, 165, 165, 0.1), inset -39.1333px 39.1333px 39.1333px rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(39.1333px);
-    backdrop-filter: blur(39.1333px);
-    border-radius: 10px;
-    width: 537px;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 28px;
-    font-family: "Inter", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px 25px;
-    gap: 10px;
-    position: relative;
-    // INPUT PLACEHOLDER
-    input::-webkit-input-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      color: #818181;
-    }
+}
 
-    input::-moz-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      color: #818181;
-    }
-
-    input:-ms-input-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      color: #818181;
-    }
-
-    input::-ms-input-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      color: #818181;
-    }
-
-    input::placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      padding-left: 32px;
-    }
-    // COUNTRY INPUT
-    &__country-input {
-      width: 486px;
-      height: 70px;
-      border-radius: 10px;
-    }
-
-    &__location-icon {
-      position: absolute;
-      right: 63px;
-      top: 97px;
-      color: #030303;
-    }
-    // CHECK IN-OUT
-    &__check-container {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    &__check-in-box,
-    &__check-out-box {
-      gap: 7px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__check-in-input,
-    &__check-out-input {
-      width: 221px;
-      height: 70px;
-      border-radius: 10px;
-    }
-    // SELECT
-    &__select-input {
-      @extend .form__country-input;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-      color: #818181;
-      padding-left: 30px;
-    }
-
-    &__arrow-icon {
-      color: $black;
-      position: absolute;
-      right: 55px;
-      top: 330px;
-      pointer-events: none;
-    }
-
-    // CHECKBOX
-    &__checkbox-box {
-      display: flex;
-      gap: 8px;
-      align-items: center;
-    }
-
-    #checkbox-label {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 22px;
-    }
-
-    #checkbox {
-      appearance: none;
-      width: 18px;
-      height: 18px;
-      background-color: $white;
-      position: relative;
-    }
-
-    #checkbox:checked::after {
-      display: block;
-      content: "\2713";
-      color: $orange;
-      font-weight: bold;
-      font-size: 14px;
-      position: absolute;
-      left: 4px;
-      bottom: 1px;
-    }
-
-    // FORM BUTTON
-    &__button {
-      @extend .form__country-input;
-      background: $orange;
-      font-size: 26px;
-      line-height: 32px;
-      font-family: "Inter", sans-serif;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        -webkit-filter: brightness(1.1);
-        filter: brightness(1.1);
-        opacity: 0.9;
-      }
-    }
+// ARROW MIDDLE
+&__arrow {
+  color: $black;
+  font-size: 80px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $white;
   }
 }
+
+// TOP FORM
+.form {
+  background: rgba(217, 217, 217, 0.1);
+  box-shadow: inset 39.1333px -39.1333px 39.1333px rgba(165, 165, 165, 0.1), inset -39.1333px 39.1333px 39.1333px rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(39.1333px);
+  backdrop-filter: blur(39.1333px);
+  border-radius: 10px;
+  width: 537px;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 28px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 25px;
+  gap: 10px;
+  position: relative;
+}
+
+// INPUT PLACEHOLDER
+input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #818181;
+}
+
+input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #818181;
+}
+
+input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #818181;
+}
+
+input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #818181;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding-left: 32px;
+}
+
+// COUNTRY INPUT
+.form__country-input {
+  width: 486px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.form__location-icon {
+  position: absolute;
+  right: 63px;
+  top: 97px;
+  color: #030303;
+}
+// CHECK IN-OUT
+.form__check-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__check-in-box,
+.form__check-out-box {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__check-in-input,
+.form__check-out-input {
+  width: 221px;
+  height: 70px;
+  border-radius: 10px;
+}
+// SELECT
+.form__select-input {
+  @extend .form__country-input;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #818181;
+  padding-left: 30px;
+}
+
+.form__arrow-icon {
+  color: $black;
+  position: absolute;
+  right: 55px;
+  top: 330px;
+  pointer-events: none;
+}
+
+// CHECKBOX
+.form__checkbox-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#checkbox-label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: $white;
+  position: relative;
+}
+
+#checkbox:checked::after {
+  display: block;
+  content: "\2713";
+  color: $orange;
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  left: 4px;
+  bottom: 1px;
+}
+
+// FORM BUTTON
+.form__button {
+  @extend .form__country-input;
+  background: $orange;
+  font-size: 26px;
+  line-height: 32px;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1);
+    opacity: 0.9;
+  }
+}
+
 // FOOTER TEXT
 .title-box-footer {
   padding-left: 100px;
