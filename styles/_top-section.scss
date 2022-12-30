@@ -96,72 +96,76 @@
     flex-direction: column;
     gap: 7px;
     max-width: 548px;
+
     @media (min-width: 450px) and (max-width: 1350px) {
       max-width: 435px;
     }
     @media (max-width: 449px) {
       width: 100%;
     }
+  }
 
-    &__main-text {
-      font-weight: 600;
-      font-size: 66px;
-      line-height: 80px;
-      @media (max-width: 450px) {
-        font-size: 37px;
-        line-height: 47px;
-      }
+  .title-text__main-text {
+    font-weight: 600;
+    font-size: 66px;
+    line-height: 80px;
+    @media (max-width: 450px) {
+      font-size: 37px;
+      line-height: 47px;
     }
-    // WATCH ICON
-    .watch-box {
-      display: flex;
-      position: relative;
-      align-items: center;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      &:hover {
-        opacity: 0.85;
-      }
+  }
+  // WATCH ICON
+  .watch-box {
+    display: flex;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.85;
+    }
 
-      &__play-icon {
-        width: 58px;
-        height: 53px;
-        background-color: $white;
-        border-radius: 50%;
-      }
+    &__play-icon {
+      width: 58px;
+      height: 53px;
+      background-color: $white;
+      border-radius: 50%;
+    }
 
-      .play-icon {
-        color: $orange;
-        font-size: 1.5rem;
-        position: absolute;
-        left: 22px;
-        top: 14px;
-      }
+    .play-icon {
+      color: $orange;
+      font-size: 1.5rem;
+      position: absolute;
+      left: 22px;
+      top: 14px;
+    }
 
-      &__watch-text {
-        font-weight: 500;
-        font-size: 10px;
-        line-height: 14px;
-        color: $black;
-        background: $white;
-        width: 130px;
-        height: 35px;
-        border-radius: 0px 20px 20px 0px;
-        padding: 10px 20px;
-        position: absolute;
-        left: 44px;
-      }
+    &__watch-text {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 14px;
+      color: $black;
+      background: $white;
+      width: 130px;
+      height: 35px;
+      border-radius: 0px 20px 20px 0px;
+      padding: 10px 20px;
+      position: absolute;
+      left: 44px;
     }
   }
 }
 
 // ARROW MIDDLE
-&__arrow {
+.title-box__arrow {
   color: $black;
   font-size: 80px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   &:hover {
+    color: $white;
+  }
+  @media (max-width: 450px) {
     color: $white;
   }
 }
@@ -184,6 +188,12 @@
   padding: 40px 25px;
   gap: 10px;
   position: relative;
+  @media (max-width: 450px) {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    gap: 12px;
+  }
 }
 
 // INPUT PLACEHOLDER
@@ -227,6 +237,9 @@ input::placeholder {
   width: 486px;
   height: 70px;
   border-radius: 10px;
+  @media (max-width: 450px) {
+    width: 100%;
+  }
 }
 
 .form__location-icon {
@@ -234,6 +247,10 @@ input::placeholder {
   right: 63px;
   top: 97px;
   color: #030303;
+  @media (max-width: 450px) {
+    right: 50px;
+    top: 80px;
+  }
 }
 // CHECK IN-OUT
 .form__check-container {
@@ -246,6 +263,9 @@ input::placeholder {
   gap: 7px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 450px) {
+    align-items: center;
+  }
 }
 
 .form__check-in-input,
@@ -253,6 +273,9 @@ input::placeholder {
   width: 221px;
   height: 70px;
   border-radius: 10px;
+  @media (max-width: 450px) {
+    width: 95%;
+  }
 }
 // SELECT
 .form__select-input {
@@ -273,6 +296,10 @@ input::placeholder {
   right: 55px;
   top: 330px;
   pointer-events: none;
+  @media (max-width: 450px) {
+    right: 42px;
+    top: 312px;
+  }
 }
 
 // CHECKBOX
@@ -332,5 +359,8 @@ input::placeholder {
   cursor: pointer;
   &:hover {
     opacity: 0.85;
+  }
+  @media (max-width: 450px) {
+    padding-left: 30px;
   }
 }
