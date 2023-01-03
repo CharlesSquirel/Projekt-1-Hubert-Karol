@@ -2,14 +2,24 @@
 
 .recommended {
   width: 100vw;
-  height: 100vh;
   padding: 60px 0 60px 100px;
   position: relative;
+  @media (max-width: 450px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
 
   &__heading-container {
     display: flex;
     flex-direction: column;
     width: 34%;
+    @media (max-width: 450px) {
+      width: 100%;
+      padding: 25px;
+      text-align: center;
+    }
   }
 
   &__heading-title {
@@ -28,15 +38,27 @@
   gap: 35px;
   align-items: center;
   font-family: "Inter", sans-serif;
+  @media (max-width: 450px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 
 .hotel-card-main {
   padding-top: 30px;
+  @media (max-width: 450px) {
+    padding: 0;
+  }
 }
 
 .main-hotel-img {
   width: 685px;
   height: 489px;
+  @media (max-width: 450px) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .main-hotel-img {
@@ -46,6 +68,9 @@
 
 .delight-figcaption {
   padding: 18px 20px 20px 32px;
+  @media (max-width: 450px) {
+    padding: 0;
+  }
 }
 
 .delight-figcaption,
@@ -54,6 +79,10 @@
   background: #f9f9f9;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 450px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .figcaption-box-first,
@@ -61,6 +90,9 @@
   display: flex;
   flex-direction: column;
   gap: 3px;
+  @media (max-width: 450px) {
+    align-items: center;
+  }
 }
 
 .hotel-delight-name {
@@ -100,6 +132,10 @@
 .secondary-hotel-img {
   width: 379px;
   height: 427px;
+  @media (max-width: 450px) {
+    width: 100%;
+    height: 268px;
+  }
 }
 
 .royal-figcaption {
@@ -110,27 +146,43 @@
 .hotel-air-name {
   font-size: 20px;
   font-weight: 400;
+  @media (max-width: 450px) {
+    font-weight: 400;
+    font-size: 39px;
+  }
 }
 
 .royal-card-star,
 .air-card-star {
   transform: scale(0.6);
+  @media (max-width: 450px) {
+    transform: scale(1);
+  }
 }
 
 .royal-notes-box,
 .air-notes-box {
   display: flex;
   align-items: center;
+  @media (max-width: 450px) {
+    gap: 7px;
+  }
 }
 
 .hotel-royal-notes-number,
 .hotel-air-notes-number {
   font-size: 10px;
+  @media (max-width: 450px) {
+    font-size: 20px;
+  }
 }
 
 .royal-hotel-city {
   font-weight: 400;
   font-size: 15px;
+  @media (max-width: 450px) {
+    font-size: 30px;
+  }
 }
 
 .royal-hotel-link {
@@ -139,6 +191,9 @@
   text-decoration-line: underline;
   &:hover {
     opacity: 0.8;
+  }
+  @media (max-width: 450px) {
+    font-size: 20px;
   }
 }
 
@@ -152,6 +207,11 @@
   bottom: 196px;
   display: flex;
   gap: 13px;
+  @media (max-width: 450px) {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .recommended__carousel-icon {
@@ -166,4 +226,23 @@
 
 .hotel-card-third {
   margin-left: 20px;
+  @media (max-width: 450px) {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.hotel-card-secondary {
+  @media (max-width: 450px) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.third-hotel-img {
+  @media (max-width: 450px) {
+    width: 100%;
+    height: 268px;
+  }
 }

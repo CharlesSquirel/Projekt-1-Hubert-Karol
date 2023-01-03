@@ -110,7 +110,7 @@ select {
     padding: 0 25px;
   }
 }
-@media (max-width: 1270px) {
+@media (max-width: 1023px) {
   .title-box {
     flex-direction: column;
   }
@@ -221,13 +221,6 @@ select {
   }
 }
 
-input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #818181;
-}
-
 input::-moz-placeholder {
   font-weight: 400;
   font-size: 20px;
@@ -236,13 +229,6 @@ input::-moz-placeholder {
 }
 
 input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  color: #818181;
-}
-
-input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -332,7 +318,7 @@ input::placeholder {
 @media (max-width: 450px) {
   .form__arrow-icon {
     right: 42px;
-    top: 312px;
+    top: 320px;
   }
 }
 
@@ -349,7 +335,9 @@ input::placeholder {
 }
 
 #checkbox {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 18px;
   height: 18px;
   background-color: #fff;
@@ -375,7 +363,6 @@ input::placeholder {
   transition: all 0.3s ease-in-out;
 }
 .form__button:hover {
-  -webkit-filter: brightness(1.1);
   filter: brightness(1.1);
   opacity: 0.9;
 }
@@ -434,14 +421,28 @@ input::placeholder {
 
 .recommended {
   width: 100vw;
-  height: 100vh;
   padding: 60px 0 60px 100px;
   position: relative;
+}
+@media (max-width: 450px) {
+  .recommended {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
 }
 .recommended__heading-container {
   display: flex;
   flex-direction: column;
   width: 34%;
+}
+@media (max-width: 450px) {
+  .recommended__heading-container {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+  }
 }
 .recommended__heading-title {
   font-weight: 600;
@@ -458,14 +459,32 @@ input::placeholder {
   align-items: center;
   font-family: "Inter", sans-serif;
 }
+@media (max-width: 450px) {
+  .hotels-examples-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 
 .hotel-card-main {
   padding-top: 30px;
+}
+@media (max-width: 450px) {
+  .hotel-card-main {
+    padding: 0;
+  }
 }
 
 .main-hotel-img {
   width: 685px;
   height: 489px;
+}
+@media (max-width: 450px) {
+  .main-hotel-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .main-hotel-img {
@@ -476,6 +495,11 @@ input::placeholder {
 .delight-figcaption {
   padding: 18px 20px 20px 32px;
 }
+@media (max-width: 450px) {
+  .delight-figcaption {
+    padding: 0;
+  }
+}
 
 .delight-figcaption,
 .royal-figcaption,
@@ -484,12 +508,26 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 450px) {
+  .delight-figcaption,
+.royal-figcaption,
+.air-figcaption {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .figcaption-box-first,
 .figcaption-box-second {
   display: flex;
   flex-direction: column;
   gap: 3px;
+}
+@media (max-width: 450px) {
+  .figcaption-box-first,
+.figcaption-box-second {
+    align-items: center;
+  }
 }
 
 .hotel-delight-name {
@@ -530,6 +568,12 @@ input::placeholder {
   width: 379px;
   height: 427px;
 }
+@media (max-width: 450px) {
+  .secondary-hotel-img {
+    width: 100%;
+    height: 268px;
+  }
+}
 
 .royal-figcaption {
   padding: 9px 11px 15px 18px;
@@ -540,10 +584,23 @@ input::placeholder {
   font-size: 20px;
   font-weight: 400;
 }
+@media (max-width: 450px) {
+  .hotel-royal-name,
+.hotel-air-name {
+    font-weight: 400;
+    font-size: 39px;
+  }
+}
 
 .royal-card-star,
 .air-card-star {
   transform: scale(0.6);
+}
+@media (max-width: 450px) {
+  .royal-card-star,
+.air-card-star {
+    transform: scale(1);
+  }
 }
 
 .royal-notes-box,
@@ -551,15 +608,32 @@ input::placeholder {
   display: flex;
   align-items: center;
 }
+@media (max-width: 450px) {
+  .royal-notes-box,
+.air-notes-box {
+    gap: 7px;
+  }
+}
 
 .hotel-royal-notes-number,
 .hotel-air-notes-number {
   font-size: 10px;
 }
+@media (max-width: 450px) {
+  .hotel-royal-notes-number,
+.hotel-air-notes-number {
+    font-size: 20px;
+  }
+}
 
 .royal-hotel-city {
   font-weight: 400;
   font-size: 15px;
+}
+@media (max-width: 450px) {
+  .royal-hotel-city {
+    font-size: 30px;
+  }
 }
 
 .royal-hotel-link {
@@ -569,6 +643,11 @@ input::placeholder {
 }
 .royal-hotel-link:hover {
   opacity: 0.8;
+}
+@media (max-width: 450px) {
+  .royal-hotel-link {
+    font-size: 20px;
+  }
 }
 
 .air-figcaption {
@@ -581,6 +660,13 @@ input::placeholder {
   bottom: 196px;
   display: flex;
   gap: 13px;
+}
+@media (max-width: 450px) {
+  .recommended__carousel-icons {
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .recommended__carousel-icon {
@@ -595,6 +681,27 @@ input::placeholder {
 
 .hotel-card-third {
   margin-left: 20px;
+}
+@media (max-width: 450px) {
+  .hotel-card-third {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .hotel-card-secondary {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .third-hotel-img {
+    width: 100%;
+    height: 268px;
+  }
 }
 
 body {
